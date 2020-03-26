@@ -1,5 +1,5 @@
 // All of the `createGreeting` functions are equivalent
-var createGreeting = function(message, name) {
+var createGreeting = function (message, name) {
   return message + ", " + name + "!";
 };
 
@@ -19,3 +19,4 @@ var greeting = createGreeting("Hello", "Angie");
 
 // Logs "Hello, Angie!";
 greet(greeting);
+

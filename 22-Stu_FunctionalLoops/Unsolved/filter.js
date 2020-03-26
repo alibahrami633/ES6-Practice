@@ -1,6 +1,6 @@
 const originalArray = [1, 3, 2, 5, 10];
 
-const evenNumbers = originalArray.filter(function(data) {
+const evenNumbers = originalArray.filter((data) => {
   if (data % 2 === 0) {
     return true;
   }
