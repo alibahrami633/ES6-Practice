@@ -7,7 +7,7 @@ const arya = {
 };
 
 // CODE BELOW HERE
-
+const { first, last, origin, allegiance } = arya;
 
 
 console.log(first); // <= Arya
@@ -32,7 +32,7 @@ const john = {
 };
 
 // CODE BELOW HERE
-
+const { brother1, brother2 } = john.family.brothers;
 
 console.log(brother1); // <= Rob Stark
 console.log(brother2); // <= Rickon Stark
@@ -42,15 +42,14 @@ console.log(brother2); // <= Rickon Stark
 const characters = ["Ned Stark", "The Quiet Wolf", "House Stark"];
 
 // CODE BELOW HERE
-
-
-console.log(name, alias, allegiance); 
+const [name, alias, allegiance2] = characters;
+console.log(name, alias, allegiance2);
 
 
 // 4. Strings
-const skills = 'The Usurper, male, Baratheon, Cersei'; 
+const skills = 'The Usurper, male, Baratheon, Cersei';
 
 // CODE BELOW HERE
+const [alias2, gender, family, spouse] = skills.split(", ");
 
-
-console.log(alias, gender, family, spouse); // print them by variable name
+console.log(alias2, gender, family, spouse); // print them by variable name
